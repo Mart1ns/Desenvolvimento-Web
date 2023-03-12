@@ -1,12 +1,101 @@
+
 body{
-
-    background-color: #dbbdff;
+    background-color:#9370DB;
 }
 
-#botao{
-    border: solid;
+
+#menu{
+    float: left;
+    border: solid ;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    height: 50%;
+    width: 10%;
+    margin-top: 10%;
+    margin-left: 3%;
+    align-items: center;
+    /* Setar animação */
+    position: fixed;
+    animation-name: animacao;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; /* Ir e voltar a nimação */
+  
+}
+
+#menu ul {
+    list-style: none;
+    margin-top: 30%;
     padding: auto;
-    max-width: auto;
-    text-align: justify;
-    font-size: medium;
+
+    
+   
+    
 }
+
+#menu li{
+   
+    text-align: center;
+    background-color:#9370DB;
+    display: inline-block;
+    width: 70%;
+    margin-top: 10%;
+    margin-bottom:10% ;
+
+    border: solid  ;
+    border-radius: 5px;
+    padding: 10PX;
+    font-family: "Gill Sans", sans-serif;
+
+    /* animação da listinha */
+    position: relative;
+    animation-name: animacao_lista;
+    animation-duration: 2s;
+  
+    animation-direction: alternate-reverse;
+    
+ 
+    
+}
+
+
+@keyframes animacao{
+  0%   {background-color: #00FFFF;}
+
+  100% {background-color:  #8A2BE2;}
+
+
+
+}
+  
+
+@keyframes animacao_lista{
+
+    from {right: 0px;}
+    50% {right: 100px !important;} /* ignored */
+    to {right: 200px;}
+  
+  }
+
+
+
+  #sobre_mim{
+    margin-top: 10% ;
+    float: right;
+    width: 400px;
+    align-items: center;
+    margin-right: 50%;
+    position: relative;
+    animation: mover_texto;
+    animation-duration: 10s;
+
+  }
+
+  #sobre_mim h1{
+    text-align: center;
+  }
+
+  #sobre_mim h1 p{
+    text-align: center;
+  }
+
