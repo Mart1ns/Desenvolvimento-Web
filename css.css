@@ -1,0 +1,100 @@
+
+body{
+    background-color:#9370DB;
+}
+
+
+#menu{
+    float: left;
+    border: solid ;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    height: auto;
+    width: 200px;
+    margin-top: 10%;
+    margin-left: 3%;
+
+    /* Setar animação */
+    position: fixed;
+    animation-name: animacao;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; /* Ir e voltar a nimação */
+  
+}
+
+#menu ul {
+    list-style: none;
+    margin: auto;
+    
+   
+    
+}
+
+#menu li{
+   
+    text-align: center;
+    background-color:#9370DB;
+    display: inline-block;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom:20px ;
+
+    border: solid  ;
+    border-radius: 5px;
+    padding: 10PX;
+    font-family: "Gill Sans", sans-serif;
+
+    /* animação da listinha */
+    position: relative;
+    animation-name: animacao_lista;
+    animation-duration: 2s;
+  
+    animation-direction: alternate-reverse;
+    
+ 
+    
+}
+
+
+@keyframes animacao{
+  0%   {background-color: #00FFFF;}
+
+  100% {background-color:  #8A2BE2;}
+
+
+
+}
+  
+
+@keyframes animacao_lista{
+
+    from {right: 0px;}
+    50% {right: 100px !important;} /* ignored */
+    to {right: 200px;}
+  
+  }
+
+
+
+  #sobre_mim{
+    margin: auto;
+    float: right;
+    width: 400px;
+    align-items: center;
+    margin-top: 10%;
+    margin-right: 40%;
+    position: relative;
+    animation: mover_texto;
+    animation-duration: 10s;
+
+  }
+
+  #sobre_mim h1{
+    text-align: center;
+  }
+
+  #sobre_mim h1 p{
+    text-align: center;
+  }
+
