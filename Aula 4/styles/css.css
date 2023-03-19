@@ -1,0 +1,157 @@
+body{
+    background-color: rgb(255, 255, 255);
+    
+    color: #6565FF;
+    font-family: poppinsblack;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header{ /* Cabeçalho*/
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+#Title{
+    flex-direction: column;
+    line-height: 4px;
+}
+
+ul{
+
+   background-color: #6565FF;
+   border: #6565FF 2px solid;
+   border-radius: 20px;
+   padding: 5px;
+   
+}
+
+ul:hover{
+    border: 2px  solid #3CD6A2;
+    color: rgb(34, 34, 34);
+}
+
+li{
+    display: inline-block; /*deixa na vertical*/
+    margin: 20px;
+}
+
+
+
+h1{
+    font-weight: 700; /* força de fonte */
+    
+}
+
+h2{
+    line-height: 20px;
+    font-size: 56px;
+    font-family: poppinsbold;
+}
+
+main{
+    
+    display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+    }
+
+    span{
+    background-color:#6565FF ;
+    color: aliceblue;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+
+    position: relative;
+    animation: texto 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+#logo{
+    background-color:#6565FF ;
+    color: aliceblue;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+
+    position: relative;
+    animation: texto 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+} 
+
+
+@keyframes texto {
+ 
+  50%{
+        background-color: #6565FF;
+        color: aliceblue;
+    }
+
+100%{
+        background-color: #3CD6A2;
+        color: aliceblue;
+}
+    
+}
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+}
+
+img{
+    width: 660px;
+    margin-left: 100px;
+    animation: imagem 5s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+@keyframes imagem {
+    
+}
+a{
+    color: white ;
+    font-family: poppinsblack;
+}
+a:hover{
+    color: #3CD6A2  ;
+    transition: 0.3s all; /*animação*/
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+#botaozinho {
+    width: 40%;
+    height: 40px;
+    background-color: #3CD6A2;
+    border: white solid 1px;
+    font-family: poppinsregular;
+    font-weight: 100;
+   
+
+}
+
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 7px;
+    border-radius: 10px;
+    border: #3CD6A2 solid 1px;
+}
+article{
+    align-self: center;
+    margin: 0 auto;
+}
