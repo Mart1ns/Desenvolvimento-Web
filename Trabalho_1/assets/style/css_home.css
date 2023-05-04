@@ -24,16 +24,19 @@ header{
     padding: 2rem 6rem;
     border-bottom: #324561 solid 10px;
     display: flex;
-    animation: header;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+
 
     
 }
 
- 
-@keyframes header {
+#logo{
+	    animation: logo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+
+@keyframes logo {
 	0% {
 		transform: scale(0.95);
 		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
