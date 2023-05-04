@@ -1,0 +1,66 @@
+body{
+    background-color: #6868fc;
+    font-family: Quicksand;
+}
+
+
+#inicio{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+
+    /* Centralizar div, não esqueceeeeeeeee*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid whitesmoke;
+    background-color: #3CD6A2;
+    border-radius: 30px;
+    width: 50%;
+    padding: 3%;
+    font-size: 105%;
+    
+}
+
+#inicio:hover{
+    transition : 1000ms;
+    padding: 30px 70px;
+
+}
+
+button{
+    
+    font-family: Quicksand;
+    font-weight: 0;
+    font-size: 14px;
+    color: #fff;
+    background-color: #6868fc;
+    padding: 10px 30px;
+    border: 2px solid #6868fc;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+
+button:hover{
+
+transition : 1000ms;
+padding: 10px 50px;
+transform : translateY(-0px);
+background-color: #fff;
+color: #6868fc;
+border: solid 2px #6868fc;
+}
+
+a{
+    text-decoration: none;
+}

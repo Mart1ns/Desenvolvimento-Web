@@ -1,0 +1,316 @@
+:root{
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+body{
+    background-color: #9999fc;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container{
+    width: min(90vw, 800px);
+    margin: auto;
+}
+
+header{
+    background-color: #3cd6a2;
+    padding: 2rem 6rem;
+    border-bottom: #324561 solid 10px;
+    display: flex;
+    animation: header;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+    
+}
+
+@keyframes header{
+ 
+}
+
+header h1{
+    color: whitesmoke   ;
+    font-size: 40px;
+    
+    
+}
+
+header img{
+    width: 70px;
+    margin-left: 5px;
+    
+}
+
+
+#logo{
+    font-weight: 900;
+    font-family:  'Atkinson Hyperlegible', sans-serif;
+    font-size: 50px;
+}
+
+/* Estilização dos icons*/
+
+#balance{
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+#balance h2{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+h2{
+    margin-top: 3.2rem;
+    color: whitesmoke;
+    font-weight: 400;
+    font-family:  'Atkinson Hyperlegible', sans-serif;
+}
+
+
+
+a{
+    color: #324561;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#3cd6a2;
+}
+
+.button.new{
+    display: inline-block;
+    margin-bottom: .9rem;
+}
+
+
+
+.card{
+    background-color: #3cd6a2;
+    border: 2px solid whitesmoke;
+    color: rgb(34,34,34);
+    padding: 1.5rem 2rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.card.total{
+    background-color: whitesmoke;
+    border: 2px solid #3cd6a2;
+}
+.card h3{
+    font-size: 1rem;
+    color: #324561;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card p{
+    font-weight: 900;
+    line-height: 2rem;
+    margin-top: 1rem;
+}
+
+
+
+#data-table{
+    width: 100%;
+    border-spacing: 1rem 0.5rem;
+    background-color: #3cd6a2;
+    border-radius: 20px;
+}
+
+
+table th{
+    background-color: whitesmoke;
+    border: 2px solid #3cd6a2;
+    opacity: 0 0.5rem;
+    border-radius: 10px;
+    text-align: center;
+    animation: th;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+
+
+
+@keyframes th {
+    
+}
+
+table td{
+    background-color: #3cd6a2;
+    
+    text-align: center;
+    
+    
+    
+}
+
+table td:hover{
+    
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    color: #324561;
+    font-weight: 900;
+    border: 1px solid #3cd6a2;
+   
+    
+}
+
+
+
+.modal-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    opacity: 0;
+    visibility: hidden ;
+}
+
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal{
+    
+    background-color: #3cd6a2;
+    
+    padding: 2.4rem;
+    border-radius: 15px;
+    
+}
+#form{
+    max-width: 500px;
+    
+
+}
+
+#form h2{
+    margin-top: 0;
+    color: whitesmoke;
+}
+
+#form form input{
+    border: none;
+    border-radius:  2rem;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+.input-group{
+    margin-top: 0.8rem;
+}
+
+.card:hover{
+
+    transition : 1000ms;
+    padding: 15px 55px;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #6868fc;
+    border: solid 2px #324561;}
+
+.input-group small{
+    opacity: 0.4;
+}
+
+.input-group.actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-group.actions .button, .input-group.actions button{
+    width: 48%;
+}
+
+.input-group.actions .button.cancel{
+
+}
+
+
+
+
+button{
+    width: 90%;
+    height: 50px;
+    background-color: #9999fc;
+    border: #ffffff 2px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #3cd6a2;
+    width: 100%;
+}
+
+.button.cancel{
+    width: 100%;
+    height: 50px;
+    background-color: #ff6961;
+    border: #ffffff 2px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 4rem 0 2rem;
+    color: var(--dark-blue);
+
+    opacity: 0.6;
+}
+
+img{
+    animation-name: img ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes img {
+
+
+   }
+   
+    
