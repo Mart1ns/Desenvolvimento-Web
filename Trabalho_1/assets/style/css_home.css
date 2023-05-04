@@ -30,9 +30,9 @@ header{
 }
 
 #logo{
-	    animation: logo;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+	animation: logo;
+    	animation-duration: 5s;
+    	animation-iteration-count: infinite;
 	animation-direction: alternate-reverse;
 }
 
@@ -43,7 +43,7 @@ header{
 	}
 
 	70% {
-		transform: scale(1.5);
+		transform: scale(1.2);
 		
 	}
 
