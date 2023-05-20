@@ -1,0 +1,15 @@
+div{
+    display: flex;
+
+    justify-content: center;
+    
+}
+
+#saida{
+    border-radius: 10px;
+    height: 20px;
+}
+h1{
+    font-family: 'Permanent Marker', cursive;
+}
+
